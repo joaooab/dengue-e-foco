@@ -19,8 +19,8 @@ public class AntivetorialController {
 
 
     @PostMapping()
-    public void criarAntivetorial(@RequestBody Antivetorial antivetorial) {
-        antivetorialRepository.save(antivetorial);
+    public ResponseEntity criarAntivetorial(@RequestBody Antivetorial antivetorial) {
+        return ResponseEntity.ok(antivetorialRepository.save(antivetorial));
     }
 
     @GetMapping()
