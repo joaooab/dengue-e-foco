@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dengueefoco.util.ArquivoCsvUtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-07-17T16:04:42" hostname="joao-pc" time="0.332">
+  <properties/>
+  <testcase name="deve_importarAntivetorialArquivoCsv_corretamente" classname="com.dengueefoco.util.ArquivoCsvUtilTest" time="0.084"/>
+  <testcase name="deve_importarDengueArquivoCsv_corretamente" classname="com.dengueefoco.util.ArquivoCsvUtilTest" time="0.08"/>
+  <testcase name="deve_importarPaletasArquivoCsv_corretamente" classname="com.dengueefoco.util.ArquivoCsvUtilTest" time="0.166"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
