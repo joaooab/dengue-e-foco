@@ -11,4 +11,9 @@ public class HelloController {
         return "Dengue e Foco server started!";
     }
 
+    @RequestMapping("/populate")
+    public String populateDataBase() {
+        return "Dados populados com sucesso!";
+    }
+
 }
