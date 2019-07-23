@@ -39,7 +39,7 @@ public class HelloController {
         populaAntivetoriais();
         populaDengue();
         populaOvitrampas();
-        return "Dados populados com sucesso!";
+        return "Dados populados com sucesso!!";
     }
 
     private void populaAntivetoriais() {
