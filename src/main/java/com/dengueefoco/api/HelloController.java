@@ -52,7 +52,7 @@ public class HelloController {
         antivetorial.setLongitude(-49.3821436374);
         antivetorial.setLatitude(-16.6014813145);
 
-        return "Dados populados com sucesso!!";
+        return "Adicionado antivetorial!!";
     }
 
     private void populaAntivetoriais() {
