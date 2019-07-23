@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 @RestController
 public class HelloController {
@@ -32,13 +33,25 @@ public class HelloController {
 
     @RequestMapping("/populate")
     public String populateDataBase() {
-        antivetorialRepository.deleteAll();
-        dengueRepository.deleteAll();
-        paletaRepository.deleteAll();
-        ovitrampaRepository.deleteAll();
-        populaAntivetoriais();
-        populaDengue();
-        populaOvitrampas();
+//        antivetorialRepository.deleteAll();
+//        dengueRepository.deleteAll();
+//        paletaRepository.deleteAll();
+//        ovitrampaRepository.deleteAll();
+//        populaAntivetoriais();
+//        populaDengue();
+//        populaOvitrampas();
+
+        Antivetorial antivetorial = new Antivetorial();
+        antivetorial.setIdUsuario(31014L);
+        antivetorial.setDataVisita(new Date());
+        antivetorial.setLarvicida("Spinosade");
+        antivetorial.setQtdLarvicida(0.0);
+        antivetorial.setStatusImovel("NULL");
+        antivetorial.setTipoImovel("Residencial");
+        antivetorial.setRegiao("Noroeste");
+        antivetorial.setLongitude(-49.3821436374);
+        antivetorial.setLatitude(-16.6014813145);
+
         return "Dados populados com sucesso!!";
     }
 
