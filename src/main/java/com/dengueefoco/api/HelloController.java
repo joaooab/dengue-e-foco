@@ -51,6 +51,7 @@ public class HelloController {
         antivetorial.setRegiao("Noroeste");
         antivetorial.setLongitude(-49.3821436374);
         antivetorial.setLatitude(-16.6014813145);
+        antivetorialRepository.save(antivetorial);
 
         return "Adicionado antivetorial!!";
     }
