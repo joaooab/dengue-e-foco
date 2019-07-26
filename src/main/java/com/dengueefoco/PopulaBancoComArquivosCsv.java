@@ -15,7 +15,7 @@ import java.util.ArrayList;
 @Component
 public class PopulaBancoComArquivosCsv implements ApplicationRunner {
 
-    private static final boolean RODAR_POPULATE_LIMPO = true;
+    private static final boolean RODAR_POPULATE_LIMPO = false;
     @Autowired
     private AntivetorialRepository antivetorialRepository;
     @Autowired
