@@ -1,9 +1,7 @@
 package com.dengueefoco;
 
 import com.dengueefoco.core.*;
-import com.dengueefoco.model.Antivetorial;
-import com.dengueefoco.model.Dengue;
-import com.dengueefoco.model.Paleta;
+import com.dengueefoco.model.*;
 import com.dengueefoco.util.ArquivoCsvUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -26,9 +24,18 @@ public class PopulaBancoComArquivosCsv implements ApplicationRunner {
     private OvitrampaRepository ovitrampaRepository;
     @Autowired
     private ArquivoCsvRepository arquivoCsvRepository;
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+
+        Usuario usuario = new Usuario();
+        usuario.setEmail("joao@gmail");
+        usuario.setNome("Joao");
+        usuario.setSenha("1234");
+        usuario.setTipoUsuario(TipoUsuario.ADMIM);
+        usuarioRepository.save(usuario);
 
         if (RODAR_POPULATE_LIMPO) {
             populaAntivetoriais();
