@@ -42,7 +42,6 @@ public class PopulaBancoComArquivosCsv implements ApplicationRunner {
             populaDengue();
             populaOvitrampas();
         }
-
     }
 
     private void populaAntivetoriais() {

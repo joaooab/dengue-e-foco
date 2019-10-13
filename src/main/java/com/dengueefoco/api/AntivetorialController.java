@@ -4,7 +4,6 @@ import com.dengueefoco.core.Antivetorial2Repository;
 import com.dengueefoco.core.AntivetorialRepository;
 import com.dengueefoco.model.Antivetorial;
 import com.dengueefoco.model.Antivetorial2;
-import com.dengueefoco.util.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +26,6 @@ public class AntivetorialController {
     public ResponseEntity criarAntivetorial2(@RequestBody Antivetorial2 antivetorial2) {
         return ResponseEntity.ok(antivetorial2Repository.save(antivetorial2));
     }
-
 
     @GetMapping()
     public ResponseEntity listarAntivetoriais() {

@@ -21,7 +21,6 @@ public class Util {
 		return notificado ? "Sim" : "Não";
 	}
 
-
 	public static Calendar formataParaCalendar(String value) {
 		try {
 			Date date = simpleDateFormat.parse(value);

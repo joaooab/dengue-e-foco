@@ -62,4 +62,5 @@ public class Usuario {
     public void setIdSupervisor(Integer idSupervisor) {
         this.idSupervisor = idSupervisor;
     }
+
 }

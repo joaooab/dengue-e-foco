@@ -31,7 +31,6 @@ public class ArquivoCsvUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return antivetoriais;
     }
 
@@ -62,7 +61,6 @@ public class ArquivoCsvUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return dengues;
     }
 
@@ -101,7 +99,6 @@ public class ArquivoCsvUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return paletas;
     }
 
@@ -124,7 +121,6 @@ public class ArquivoCsvUtil {
             ovitrampa.setQtdOvos(toLong(getColuna(colunasTratadas, i)));
             ovitrampas.add(ovitrampa);
         }
-
         return ovitrampas;
     }
 
@@ -185,6 +181,5 @@ public class ArquivoCsvUtil {
     private static long toLong(String coluna) {
         return Long.parseLong(coluna);
     }
-
 
 }

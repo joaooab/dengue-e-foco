@@ -17,7 +17,6 @@ public class PaletaController {
         this.paletaRepository = paletaRepository;
     }
 
-
     @PostMapping()
     public ResponseEntity criarPaleta(@RequestBody Paleta paleta) {
         return ResponseEntity.ok(paletaRepository.save(paleta));
