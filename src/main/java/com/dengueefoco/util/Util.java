@@ -32,7 +32,7 @@ public class Util {
 		}
 	}
 
-	public static String formataParaString(Calendar calendar) {
+	private static String formataParaString(Calendar calendar) {
 		return simpleDateFormat.format(calendar.getTime());
 	}
 
