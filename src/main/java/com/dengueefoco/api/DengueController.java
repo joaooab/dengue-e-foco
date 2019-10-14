@@ -17,7 +17,6 @@ public class DengueController {
         this.dengueRepository = dengueRepository;
     }
 
-
     @PostMapping()
     public ResponseEntity criarDengue(@RequestBody Dengue dengue) {
         return ResponseEntity.ok(dengueRepository.save(dengue));

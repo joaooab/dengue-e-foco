@@ -24,11 +24,9 @@ public class OvitrampaController {
         return ResponseEntity.ok(ovitrampaRepository.save(ovitrampa));
     }
 
-
     @GetMapping()
     public ResponseEntity listarAntivetoriais() {
         return ResponseEntity.ok(ovitrampaRepository.findAll());
     }
-
 
 }

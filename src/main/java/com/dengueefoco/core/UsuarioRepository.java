@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-
     @Query("SELECT u FROM usuario u WHERE LOWER(u.email)=LOWER(:email) ")
     Usuario findByEmail(@Param("email") String email);
 

@@ -2,10 +2,8 @@ package com.dengueefoco.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @JsonRootName("antivetorial2")
@@ -264,4 +262,3 @@ public class Antivetorial2 {
 	}
 
 }
-

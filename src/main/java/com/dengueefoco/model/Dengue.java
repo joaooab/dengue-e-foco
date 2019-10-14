@@ -175,6 +175,6 @@ public class Dengue {
                 this.classiFin = "CASOS EM INVESTIGAÇÃO";
                 break;
         }
-
     }
+
 }

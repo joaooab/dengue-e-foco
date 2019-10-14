@@ -17,7 +17,6 @@ public class UsuarioController {
         this.usuarioRepository = usuarioRepository;
     }
 
-
     @PostMapping()
     public void criarUsuario(@RequestBody Usuario usuario) {
         usuarioRepository.save(usuario);
